@@ -1,4 +1,8 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  ...
+}:
 
 {
   home.username = "yifeng";
@@ -8,20 +12,8 @@
 
   imports = [
     ./dotfile/zshrc.nix
-  ];
-
-  home.packages = with pkgs; [
-    nh
-    fastfetch
-    mcp-nixos
-
-    python3
-    openjdk
-    nodejs
-    go
-    rustc
-    cargo
-    zig
+    ./packages.nix
+    ./environment.nix
   ];
 
   programs.home-manager.enable = true;
