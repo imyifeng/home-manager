@@ -5,9 +5,10 @@
 
 {
   home.packages = with pkgs; [
-    nh
-    fastfetch
-    mcp-nixos
-
+    zig
   ];
+
+  home.sessionVariables = {
+    
+  };
 }

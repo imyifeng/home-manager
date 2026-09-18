@@ -11,6 +11,11 @@
   home.stateVersion = "26.05";
 
   imports = [
+    ./dev/go.nix
+    ./dev/java.nix
+    ./dev/nodejs.nix
+    ./dev/python.nix
+    ./dev/rust.nix
     ./dotfile/zshrc.nix
     ./packages.nix
     ./environment.nix
