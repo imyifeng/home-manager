@@ -16,6 +16,7 @@
     ./dev/nodejs.nix
     ./dev/python.nix
     ./dev/rust.nix
+    ./dev/zig.nix
     ./dotfile/zshrc.nix
     ./packages.nix
     ./environment.nix
